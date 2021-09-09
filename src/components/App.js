@@ -16,6 +16,7 @@ import {
   useHistory,
 } from "react-router-dom";
 import PrivateRoute from "./PrivateRoute";
+import { Card, Button, Alert } from "react-bootstrap";
 
 const App = () => {
   const LoginContainer = () => {
@@ -44,12 +45,21 @@ const App = () => {
   const PageNotFound = () => {
     return (
       <div className="container">
-        <h1
+        <div
           className="d-flex align-items-center justify-content-center"
-          style={{ marginTop: "50px" }}
+          style={{ marginTop: "30vh" }}
         >
-          PAGE NOT FOUND
-        </h1>
+          <h1 style={{ fontSize: "120px" }}>404</h1>
+        </div>
+        <div className="d-flex align-items-center justify-content-center">
+          <h1>OPPS! PAGE NOT FOUND</h1>
+        </div>
+        <div className="d-flex align-items-center justify-content-center">
+          <p>
+            Sorry, the page you're looking for doesn't exist. If you think
+            something is broken, report a problem.
+          </p>
+        </div>
       </div>
     );
   };

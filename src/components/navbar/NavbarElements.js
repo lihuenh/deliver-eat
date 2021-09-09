@@ -7,10 +7,18 @@ export const Nav = styled.nav`
   height: 80px;
   display: flex;
   justify-content: space-between;
-  padding: 0.5rem calc((100vw - 1000px) / 2);
+  padding: 0.5rem calc((10vw - 100px) / 2);
   z-index: 10;
   /* Third Nav */
   /* justify-content: flex-start; */
+`;
+
+export const Brand = styled.span`
+  color: #fff;
+  pointer-events: none;
+  font-size: 40px;
+  font-family: "Lobster", cursive;
+  //font-family: "Righteous", cursive;
 `;
 
 export const NavLink = styled(Link)`
@@ -21,14 +29,20 @@ export const NavLink = styled(Link)`
   padding: 0 1rem;
   height: 100%;
   cursor: pointer;
+  font-weight: 500;
   &.active {
-    color: #15cdfc;
+    color: #5eb3db;
   }
+  &:hover {
+    color: #eda03b;
+  }
+  font-size: 15px;
 `;
 
 export const Bars = styled(FaBars)`
   display: none;
   color: #fff;
+
   @media screen and (max-width: 768px) {
     display: block;
     position: absolute;
