@@ -18,7 +18,7 @@ import {
   useHistory,
 } from "react-router-dom";
 import PrivateRoute from "./PrivateRoute";
-import { Card, Button, Alert } from "react-bootstrap";
+import Footer from "./footer/Footer";
 
 const App = () => {
   const LoginContainer = () => {
@@ -42,6 +42,7 @@ const App = () => {
         <PrivateRoute exact path="/comercio" component={Comercio} />
         <PrivateRoute exact path="/shopcart" component={ShopCart} />
         <PrivateRoute exact path="/loquesea" component={LoQueSea} />
+        <Footer />
       </div>
     );
   };

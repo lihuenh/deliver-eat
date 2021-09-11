@@ -62,7 +62,7 @@ export default function LoQueSea() {
               style={{
                 padding: "15px",
                 border: "1px solid Gainsboro",
-                borderRadius: "7px",
+                borderRadius: "8px",
               }}
             >
               <h3>Datos del Pedido</h3>
@@ -106,7 +106,7 @@ export default function LoQueSea() {
               style={{
                 padding: "15px",
                 border: "1px solid Gainsboro",
-                borderRadius: "7px",
+                borderRadius: "8px",
               }}
             >
               <h3>Datos del Comercio</h3>
@@ -132,7 +132,7 @@ export default function LoQueSea() {
               style={{
                 padding: "15px",
                 border: "1px solid Gainsboro",
-                borderRadius: "7px",
+                borderRadius: "8px",
               }}
             >
               <h3>Datos de Entrega</h3>
@@ -274,7 +274,7 @@ export default function LoQueSea() {
               style={{
                 padding: "15px",
                 border: "1px solid Gainsboro",
-                borderRadius: "7px",
+                borderRadius: "8px",
               }}
             >
               <h3>Datos de Pago</h3>
@@ -374,7 +374,7 @@ export default function LoQueSea() {
             </div>
             <Button
               disabled={loading}
-              className="w-100 btn-success"
+              className="w-100 btn-primary"
               style={{ marginBottom: "50px" }}
               onClick={handleShow}
             >

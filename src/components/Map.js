@@ -141,7 +141,7 @@ export class Map extends React.Component {
           googleMapURL={mapURL}
           loadingElement={<div style={{ height: `100%` }} />}
           containerElement={<div style={{ height: `400px` }} />}
-          mapElement={<div style={{ height: `100%`, borderRadius: "7px" }} />}
+          mapElement={<div style={{ height: `100%`, borderRadius: "8px" }} />}
         />
       </div>
     );
