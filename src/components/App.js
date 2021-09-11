@@ -6,6 +6,8 @@ import Home from "./Home";
 import Navbar from "./navbar/Navigation";
 import Comida from "./Comida";
 import Comercio from "./Comercio";
+import ShopCart from "./ShopCart";
+import LoQueSea from "./LoQueSea";
 import { AuthProvider, useAuth } from "./auth";
 import {
   BrowserRouter as Router,
@@ -38,6 +40,8 @@ const App = () => {
         <PrivateRoute exact path="/home" component={Home} />
         <PrivateRoute exact path="/comida" component={Comida} />
         <PrivateRoute exact path="/comercio" component={Comercio} />
+        <PrivateRoute exact path="/shopcart" component={ShopCart} />
+        <PrivateRoute exact path="/loquesea" component={LoQueSea} />
       </div>
     );
   };
@@ -75,6 +79,8 @@ const App = () => {
           <Route exact path={"/home"} component={DefaultContainer} />
           <Route exact path={"/comida"} component={DefaultContainer} />
           <Route exact path={"/comercio"} component={DefaultContainer} />
+          <Route exact path={"/shopcart"} component={DefaultContainer} />
+          <Route exact path={"/loquesea"} component={DefaultContainer} />
           <Route component={PageNotFound} />
         </Switch>
       </AuthProvider>

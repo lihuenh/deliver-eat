@@ -15,7 +15,10 @@ export default function Home() {
         className="d-flex align-items-center justify-content-center"
         style={{ minHeight: "100vh" }}
       >
-        <div className="w-100" style={{ maxWidth: "400px" }}>
+        <div className="w-100">
+          <h1 className="d-flex justify-content-center">
+            Bienvenido {user.email}
+          </h1>
           {/* <Card>
             <Card.Body>
               <h2 className="text-center mb-4">Profile</h2>

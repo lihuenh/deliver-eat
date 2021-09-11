@@ -1,9 +1,20 @@
 // import React, { useState } from "react";
-import { Nav, NavLink, Bars, NavMenu, NavBtn, Brand } from "./NavbarElements";
+import {
+  Nav,
+  NavLink,
+  Bars,
+  NavMenu,
+  NavBtn,
+  Brand,
+  ButtonLogout,
+  ButtonCart,
+  ImgCart,
+} from "./NavbarElements";
+import { BiCartAlt, BiCart } from "react-icons/bi";
 import { useHistory } from "react-router-dom";
 import logo from "../../images/icono_01.png";
 import { useAuth } from "../auth";
-import cart from "../../images/shopping-cart-1.png";
+import "../../estilo.css";
 
 const Navbar = () => {
   const auth = useAuth();
@@ -24,46 +35,23 @@ const Navbar = () => {
         </NavLink>
         <Bars />
         <NavMenu>
-          <NavLink to="/home">Home</NavLink>
+          {/* <NavLink to="/home">Home</NavLink> */}
           <NavLink to="/comida">Comidas</NavLink>
           <NavLink to="/comercio">Comercios</NavLink>
+          <NavLink to="/loquesea">Lo que sea</NavLink>
         </NavMenu>
         <NavBtn>
           <span style={{ marginRight: "30px", color: "#fff" }}>
             {user != null ? user.email : ""}
           </span>
-          <button
-            className="btn btn-light"
-            style={{
-              backgroundColor: "#D2D2D2",
-              borderColor: "#A8A8A8",
-              fontWeight: 500,
-              color: "#6D6D6D",
-            }}
-            onClick={() => handleLogout()}
-          >
+          <ButtonLogout className="btn" onClick={() => handleLogout()}>
             Logout
-          </button>
-          <button
-            className="btn btn-light"
-            style={{
-              marginLeft: "20px",
-              backgroundColor: "#D2D2D2",
-              borderColor: "#A8A8A8",
-              fontWeight: 500,
-              color: "#6D6D6D",
-            }}
-          >
-            <img
-              src={cart}
-              style={{
-                height: "20px",
-                marginRight: "10px",
-                transform: "rotate(353deg)",
-              }}
-            ></img>
-            0
-          </button>
+          </ButtonLogout>
+          <NavLink to="/shopcart">
+            <ButtonCart className="btn">
+              <BiCart size={22} style={{ transform: "rotate(353deg)" }} /> 0
+            </ButtonCart>
+          </NavLink>
         </NavBtn>
       </Nav>
     </>
