@@ -35,7 +35,7 @@ export default function Signup() {
 
   return (
     <>
-      <div style={{ backgroundColor: "#d17151" }}>
+      <div style={{ backgroundColor: "#5e60ce" }}>
         <div
           className="d-flex align-items-center justify-content-center"
           style={{ marginBottom: "120px", paddingTop: "80px" }}
@@ -50,18 +50,28 @@ export default function Signup() {
           <div className="w-100" style={{ maxWidth: "400px" }}>
             <Card>
               <Card.Body>
-                <h2 className="text-center mb-4">Sign up</h2>
+                <h2 className="text-center mb-4">Registrarse</h2>
                 <Form onSubmit={handleSubmit}>
                   <Form.Group>
                     <Form.Label>Email</Form.Label>
-                    <Form.Control type="email" ref={emailRef} required />
+                    <Form.Control
+                      className="mb-3"
+                      type="email"
+                      ref={emailRef}
+                      required
+                    />
                   </Form.Group>
                   <Form.Group>
-                    <Form.Label>Password</Form.Label>
-                    <Form.Control type="password" ref={passwordRef} required />
+                    <Form.Label>Constraseña</Form.Label>
+                    <Form.Control
+                      className="mb-3"
+                      type="password"
+                      ref={passwordRef}
+                      required
+                    />
                   </Form.Group>
                   <Form.Group>
-                    <Form.Label>Password Confirmation</Form.Label>
+                    <Form.Label>Confirmar contraseña</Form.Label>
                     <Form.Control
                       type="password"
                       ref={passwordConfirmRef}
@@ -74,7 +84,7 @@ export default function Signup() {
                     type="submit"
                     style={{ marginTop: "15px" }}
                   >
-                    Sign Up
+                    Registrarse
                   </Button>
                   {error && (
                     <Alert
@@ -88,9 +98,9 @@ export default function Signup() {
               </Card.Body>
             </Card>
             <div className="w-100 text-center mt-2">
-              Already have an account?{" "}
+              Necesitas una cuenta?{" "}
               <Link to="/login" style={{ color: "#fff" }}>
-                Log in
+                Iniciar sesion
               </Link>
             </div>
           </div>

@@ -29,7 +29,7 @@ export default function ForgotPassword() {
 
   return (
     <>
-      <div style={{ backgroundColor: "#d17151" }}>
+      <div style={{ backgroundColor: "#5e60ce" }}>
         <div
           className="d-flex align-items-center justify-content-center"
           style={{ marginBottom: "120px", paddingTop: "80px" }}
@@ -44,7 +44,7 @@ export default function ForgotPassword() {
           <div className="w-100" style={{ maxWidth: "400px" }}>
             <Card>
               <Card.Body>
-                <h2 className="text-center mb-4">Passowrd Reset</h2>
+                <h2 className="text-center mb-4">Restablecer contraseña</h2>
                 <Form onSubmit={handleSubmit}>
                   <Form.Group>
                     <Form.Label>Email</Form.Label>
@@ -52,11 +52,11 @@ export default function ForgotPassword() {
                   </Form.Group>
                   <Button
                     disabled={loading}
-                    className="w-100  btn-dark"
+                    className="mb-3 w-100  btn-dark"
                     type="submit"
                     style={{ marginTop: "15px" }}
                   >
-                    Confirm
+                    Confirmar
                   </Button>
                   {error && (
                     <Alert
@@ -77,15 +77,15 @@ export default function ForgotPassword() {
                 </Form>
                 <div className="w-100 text-center mt-3">
                   <Link to="/login" style={{ color: "#000" }}>
-                    Login
+                    Iniciar sesión
                   </Link>
                 </div>
               </Card.Body>
             </Card>
             <div className="w-100 text-center mt-2">
-              Need an account?{" "}
+              Nuevo en DeliverEat?{" "}
               <Link to="/signup" style={{ color: "#fff" }}>
-                Sign up
+                Crear una cuenta.
               </Link>
             </div>
           </div>

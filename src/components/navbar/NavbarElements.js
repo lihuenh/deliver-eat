@@ -3,7 +3,7 @@ import { NavLink as Link } from "react-router-dom";
 import styled from "styled-components";
 
 export const Nav = styled.nav`
-  background: #d17151;
+  background: #5e60ce;
   // background: #00486b;
   height: 80px;
   display: flex;
@@ -52,7 +52,7 @@ export const NavLink = styled(Link)`
   font-weight: 500;
   &.active {
     // color: #5eb3db;
-    color: #00486b;
+    color: #000;
   }
   &:hover {
     color: #fff;
@@ -104,14 +104,14 @@ export const NavBtn = styled.nav`
 export const ButtonLogout = styled.button`
   background-color: #fff;
   // color: #00486b;
-  color: #cc623e;
+  color: #5e60ce;
   margin-right: 40px;
   font-weight: 600;
   transition: background-color ease 300ms, border-color ease 300ms;
 
   &:hover {
     // background-color: #00486b;
-    background-color: #d17151;
+    background-color: #5e60ce;
     border-color: #fff;
     color: #fff;
   }
@@ -119,7 +119,7 @@ export const ButtonLogout = styled.button`
 
 export const ButtonCart = styled.button`
   background-color: #fff;
-  color: #cc623e;
+  color: #5e60ce;
   // color: #00486b;
   font-weight: 600;
   transition: background-color ease 300ms, border-color ease 300ms;
@@ -127,7 +127,7 @@ export const ButtonCart = styled.button`
   padding: 5px 15px;
   &:hover {
     // background-color: #00486b;
-    background-color: #d17151;
+    background-color: #5e60ce;
     border-color: #fff;
     color: #fff;
   }

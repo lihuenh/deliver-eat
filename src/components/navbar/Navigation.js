@@ -35,7 +35,6 @@ const Navbar = () => {
         </NavLink>
         <Bars />
         <NavMenu>
-          {/* <NavLink to="/home">Home</NavLink> */}
           <NavLink to="/comida">Comidas</NavLink>
           <NavLink to="/comercio">Comercios</NavLink>
           <NavLink to="/loquesea">Lo que sea</NavLink>
@@ -45,7 +44,7 @@ const Navbar = () => {
             {user != null ? user.email : ""}
           </span>
           <ButtonLogout className="btn" onClick={() => handleLogout()}>
-            Logout
+            Cerrar sesion
           </ButtonLogout>
           <NavLink to="/shopcart">
             <ButtonCart className="btn">

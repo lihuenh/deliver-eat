@@ -108,9 +108,13 @@ export class Map extends React.Component {
               lng: this.state.markerPosition.lng,
             }}
           >
-            <InfoWindow>
-              <div>Hello world!</div>
-            </InfoWindow>
+            {this.state.direccion != "" ? (
+              <InfoWindow>
+                <div>{this.state.direccion}</div>
+              </InfoWindow>
+            ) : (
+              ""
+            )}
           </Marker>
           <AutoComplete
             style={{
@@ -120,7 +124,7 @@ export class Map extends React.Component {
               marginTop: 2,
               marginBottom: "15px",
             }}
-            types={["(regions)"]}
+            // types={["(regions)"]}
             onPlaceSelected={this.onPlaceSelected}
           />
         </GoogleMap>
@@ -140,7 +144,7 @@ export class Map extends React.Component {
         <MapWithAMarker
           googleMapURL={mapURL}
           loadingElement={<div style={{ height: `100%` }} />}
-          containerElement={<div style={{ height: `400px` }} />}
+          containerElement={<div style={{ height: `500px` }} />}
           mapElement={<div style={{ height: `100%`, borderRadius: "8px" }} />}
         />
       </div>

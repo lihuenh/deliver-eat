@@ -32,7 +32,8 @@ export default function Login() {
 
   return (
     <>
-      <div style={{ backgroundColor: "#D17151" }}>
+      <div style={{ backgroundColor: "#5E60CE" }}>
+        {/* <div style={{ backgroundColor: "#D17151" }}> */}
         <div
           className="d-flex align-items-center justify-content-center"
           style={{ marginBottom: "120px", paddingTop: "80px" }}
@@ -47,15 +48,25 @@ export default function Login() {
           <div className="w-100" style={{ maxWidth: "400px" }}>
             <Card>
               <Card.Body>
-                <h2 className="text-center mb-4">Log In</h2>
+                <h2 className="text-center mb-4">Iniciar sesión</h2>
                 <Form onSubmit={handleSubmit}>
                   <Form.Group>
                     <Form.Label>Email</Form.Label>
-                    <Form.Control type="email" ref={emailRef} required />
+                    <Form.Control
+                      className="mb-3"
+                      type="email"
+                      ref={emailRef}
+                      required
+                    />
                   </Form.Group>
                   <Form.Group>
-                    <Form.Label>Password</Form.Label>
-                    <Form.Control type="password" ref={passwordRef} required />
+                    <Form.Label>Contraseña</Form.Label>
+                    <Form.Control
+                      className="mb-3"
+                      type="password"
+                      ref={passwordRef}
+                      required
+                    />
                   </Form.Group>
                   <Button
                     disabled={loading}
@@ -63,7 +74,7 @@ export default function Login() {
                     type="submit"
                     style={{ marginTop: "15px" }}
                   >
-                    Log In
+                    Iniciar sesión
                   </Button>
                   {error && (
                     <Alert
@@ -76,15 +87,15 @@ export default function Login() {
                 </Form>
                 <div className="w-100 text-center mt-3">
                   <Link to="/forgot-password" style={{ color: "#000" }}>
-                    Forgot password?
+                    Olvidaste la contraseña?
                   </Link>
                 </div>
               </Card.Body>
             </Card>
             <div className="w-100 text-center mt-2">
-              Need an account?{" "}
+              Nuevo en DeliverEat?{" "}
               <Link to="/signup" style={{ color: "#fff" }}>
-                Sign up
+                Crear una cuenta.
               </Link>
             </div>
           </div>
