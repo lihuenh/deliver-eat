@@ -13,7 +13,7 @@ import AutoComplete from "react-google-autocomplete";
 
 Geocode.setApiKey(process.env.REACT_APP_GEOCODE_KEY);
 
-const mapURL = `https://maps.googleapis.com/maps/api/js?key=AIzaSyC4R6AN7SmujjPUIGKdyao2Kqitzr1kiRg&v=3.exp&libraries=geometry,drawing,places&key=${process.env.REACT_APP_GOOGLE_KEY}`;
+const mapURL = `https://maps.googleapis.com/maps/api/js?&address=187+Funes de bonet&libraries=geometry,drawing,places&key=${process.env.REACT_APP_GEOCODE_KEY}`;
 
 export class Map extends React.Component {
   state = {
